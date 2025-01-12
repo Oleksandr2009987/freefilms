@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пираты Карибского моря</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="video-container">
+        <h2 id="video-title">Пираты Карибского моря</h2>
+        <div id="custom-player">
+            <div id="freefilms-text">freefilms.com</div> <!-- Text positioned over the video -->
+            <video id="pirates-video" preload="metadata">
+                <source src="films/pirates_of_the_caribbean.mp4" type="video/mp4">
+                Ваш браузер не поддерживает воспроизведение видео.
+            </video>
+            <div id="controls">
+                <div id="control-buttons">
+                    <button id="play-pause">►</button>
+                </div>
+                <div id="progress-controls">
+                    <span id="current-time">00:00</span>
+                    <input type="range" id="progress-bar" value="0" step="1" max="100">
+                    <span id="duration">00:00</span>
+                </div>
+                <div id="volume-controls">
+                    <input type="range" id="volume" value="100" step="1" min="0" max="100">
+                </div>
+                <button id="fullscreen" title="Полноэкранный режим">⛶</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
